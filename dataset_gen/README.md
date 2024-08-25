@@ -1,4 +1,3 @@
-
 # Data Preparation
 
 Our datasets are generated as the following procedures, following the practice of [CIGA](https://github.com/LFhase/CIGA).
@@ -14,7 +13,6 @@ The four datasets used in our paper are generated with
 - global_b=0.6;
 - label_noise=0.2;
 
-
 `two-piece graph {0.8,0.7}`:
 
 - global_b=0.7;
@@ -22,7 +20,7 @@ The four datasets used in our paper are generated with
 
 `two-piece graph {0.8,0.9}`:
 
-- global_b=0.9;
+- global_b=0.90;
 - label_noise=0.2;
 
 `two-piece graph {0.7,0.9}`:

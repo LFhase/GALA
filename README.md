@@ -1,13 +1,13 @@
 
 <h1 align="center">GALA: Graph invAriant Learning Assistant</h1>
 <p align="center">
-    <a href="https://arxiv.org/abs/2202.05441"><img src="https://img.shields.io/badge/arXiv-xxxx.xxxx-b31b1b.svg" alt="Paper"></a>
+    <a href="https://arxiv.org/abs/2310.19035"><img src="https://img.shields.io/badge/arXiv-2310.19035-b31b1b.svg" alt="Paper"></a>
     <a href="https://github.com/LFhase/GALA"><img src="https://img.shields.io/badge/-Github-grey?logo=github" alt="Github"></a>
     <!-- <a href="https://colab.research.google.com/drive/1t0_4BxEJ0XncyYvn_VyEQhxwNMvtSUNx?usp=sharing"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Colab"></a> -->
-    <a href="https://openreview.net/forum?id=A6AFK_JwrIW"> <img alt="License" src="https://img.shields.io/static/v1?label=Pub&message=NeurIPS%2723&color=blue"> </a>
-    <a href="https://github.com/LFhase/GALA/blob/main/LICENSE"> <img alt="License" src="https://img.shields.io/github/license/LFhase/CIGA?color=blue"> </a>
-    <!-- <a href="https://neurips.cc/virtual/2022/poster/54643"> <img src="https://img.shields.io/badge/Video-grey?logo=Kuaishou&logoColor=white" alt="Video"></a> -->
-    <!-- <a href="https://lfhase.win/files/slides/CIGA.pdf"> <img src="https://img.shields.io/badge/Slides-grey?&logo=MicrosoftPowerPoint&logoColor=white" alt="Slides"></a> -->
+    <a href="https://openreview.net/forum?id=EqpR9Vtt13"> <img alt="License" src="https://img.shields.io/static/v1?label=Pub&message=NeurIPS%2723&color=blue"> </a>
+    <a href="https://github.com/LFhase/GALA/blob/main/LICENSE"> <img alt="License" src="https://img.shields.io/github/license/LFhase/GALA?color=blue"> </a>
+    <a href="https://nips.cc/virtual/2023/poster/72288"> <img src="https://img.shields.io/badge/Video-grey?logo=Kuaishou&logoColor=white" alt="Video"></a>
+    <a href="https://lfhase.win/files/slides/GALA.pdf"> <img src="https://img.shields.io/badge/Slides-grey?&logo=MicrosoftPowerPoint&logoColor=white" alt="Slides"></a>
    <!--  <a href="https://icml.cc/media/PosterPDFs/ICML%202022/a8acc28734d4fe90ea24353d901ae678.png"> <img src="https://img.shields.io/badge/Poster-grey?logo=airplayvideo&logoColor=white" alt="Poster"></a> -->
 </p>
 
@@ -15,8 +15,8 @@
 This repo contains the sample code for reproducing the results of our NeurIPS 2023 paper: *[Does Invariant Graph Learning via Environment Augmentation Learn Invariance?](https://openreview.net/forum?id=EqpR9Vtt13)*, which has also been presented as ***spotlight*** at [ICLR DG](https://domaingen.github.io/). 😆😆😆
 
 Updates:
-- [ ] Camera-ready version of the paper is updated in arxiv!
-- [ ] Full code and instructions will be released soon!
+- [x] Camera-ready version of the paper has been updated in arxiv!
+- [x] Full code and instructions have been released!
 
 
 ## Introduction
@@ -64,19 +64,11 @@ python3 main.py  -c_in 'raw' -c_rep 'rep'  --seed '[1,2,3,4,5]' --num_layers 3 -
 ```
 If `num_envs=1`, the sampling will be based on prediction correctness while if `num_envs>1`, the sampling will based on the clustering, and
 
-<!-- ### Reproduce results
+### Reproduce results
 We provide the hyperparamter tuning and evaluation details in the paper and appendix.
 In the below we give a brief introduction of the commands and their usage in our code. 
 We provide the corresponding running scripts in the [script](./scripts/) folder.
 
-To obtain results of ERM, simply run 
-```
-python main.py --erm
-```
-with corresponding datasets and model specifications.
-
-
-Runing with GALA: -->
 
 
 ## Misc
@@ -85,10 +77,10 @@ If you find our paper and repo useful, please cite our paper:
 ```bibtex
 @inproceedings{
 chen2023gala,
-title={Does Invariant Graph Learning via Environment Augmentation Learn Invariance?},
-author={Yongqiang Chen and Yatao Bian and Kaiwen Zhou and Binghui Xie and Bo Han and James Cheng},
-booktitle={Thirty-seventh Conference on Neural Information Processing Systems},
-year={2023},
-url={https://openreview.net/forum?id=EqpR9Vtt13}
+    title={Does Invariant Graph Learning via Environment Augmentation Learn Invariance?},
+    author={Yongqiang Chen and Yatao Bian and Kaiwen Zhou and Binghui Xie and Bo Han and James Cheng},
+    booktitle={Thirty-seventh Conference on Neural Information Processing Systems},
+    year={2023},
+    url={https://openreview.net/forum?id=EqpR9Vtt13}
 }
 ```
